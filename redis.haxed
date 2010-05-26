@@ -1,0 +1,29 @@
+
+
+---
+
+import:
+         classes: bdog.Os
+
+---
+project:            
+    website:            http://blackdog66.wordpress.com
+    description:        Redis for hxNode
+    author:             blackdog
+    author-email:       blackdog66@gmail.com
+    tags:               redis node haxe
+    license:            bdog
+    version:            0.1
+    comments:           ...
+
+---
+
+build:
+        name:           test
+        target:         js
+        target-file:    test.js
+        class-path:     ./
+        main-class:     Test
+        options:         -D nodejs
+
+        

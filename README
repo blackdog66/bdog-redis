@@ -1,0 +1,14 @@
+
+Asychronous type signatures for fictorials node.js Redis client.
+
+Download fictorials code here http://github.com/fictorial/redis-node-client.
+Then set the path to the redis-client.js file,if required, in the newClient() method - it require's by default require(mypath+'redis-client')
+
+
+var c = Redis.newClient("mypath");
+    c.set("woot","ritchie",function(e,v) {
+        trace("setting "+v);
+      });
+
+the only crappy thing is the M commands all take an array rather than a variable length argument list but not to bad.
+
